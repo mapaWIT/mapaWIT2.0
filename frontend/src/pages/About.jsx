@@ -12,10 +12,10 @@ export default function About() {
   const teamMembers = [
     { name: "Dheany Lyn Jereza", role: "Project Manager", image: Dheany },
     { name: "Audrey Margarette Camaya", role: "UI/UX Designer\nResearcher", image: Audrey },
-    { name: "Krisha Geacaniga", role: "UI/UX Designer\nFront-end Developer", image: Krisha },
-    { name: "Lebron James De La Cruz", role: "Back-end Developer", image: James },
-    { name: "Justine Ann Mariano", role: "Researcher\nFront-end Developer", image: Justine },
-    { name: "Ruzlyn Kaw", role: "Back-end Developer", image: Ruzlyn },
+    { name: "Krisha Geacaniga", role: "UI/UX Designer\nResearcher", image: Krisha },
+    { name: "Lebron James De La Cruz", role: "Backend Developer", image: James },
+    { name: "Justine Ann Mariano", role: "Backend Developer", image: Justine },
+    { name: "Ruzlyn Kaw", role: "Frontend Developer", image: Ruzlyn },
   ];
 
   return (

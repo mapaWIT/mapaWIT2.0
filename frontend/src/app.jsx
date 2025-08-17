@@ -1,41 +1,45 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import HowToUse from "./pages/HowToUse";
-import Navigate from "./pages/Navigate";
-import MainCampus from "./pages/MainCampus";
-import RTSCampus from "./pages/RTSCampus";
-import ScienceBuilding from "./pages/ScienceBuilding";
+import Combined from "./pages/Combined";
+import Loading from "./components/Loading";
 
-function Layout(){
+function Layout() {
   const location = useLocation();
-  const hideNavbarOn = ["/about","/how-to-use","/main","/rts","/science-building"];
-  
+  const hideNavbarOn = [ "/how-to-use","/about"];
 
-  return(
+  return (
     <>
-    {!hideNavbarOn.includes(location.pathname)&& <Navbar/>}
-    <Routes>
+      {!hideNavbarOn.includes(location.pathname) && <Navbar />}
+      <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
-        <Route path="/how-to-use" element={<HowToUse/>}/>
-        <Route path="/navigate" element={<Navigate/>}/>
-        <Route path="/main" element={<MainCampus/>}/>
-        <Route path="/rts" element={<RTSCampus/>}/>
-        <Route path="/science-building" element={<ScienceBuilding/>}/>
+        <Route path="/how-to-use" element={<HowToUse />} />
+        <Route path="/combined" element={<Combined />} />
       </Routes>
-      </>
+    </>
   );
 }
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  // Show loader only once when app loads
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <Router>
-      
-     <Layout/>
-      
+      <Layout />
     </Router>
   );
 }
-

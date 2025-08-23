@@ -7,6 +7,11 @@ import HowToUse from "./pages/HowToUse";
 import Combined from "./pages/Combined";
 import Loading from "./components/Loading";
 import Ar from "./pages/Ar"
+import MainBuilding from "./pages/MainBuilding";
+import RTS from "./pages/RTS"
+import ScienceBuilding from "./pages/ScienceBuilding";
+import Options from "./pages/Options ";
+import Navigate from "./pages/Navigate";
 
 function Layout() {
   const location = useLocation();
@@ -21,6 +26,11 @@ function Layout() {
         <Route path="/how-to-use" element={<HowToUse />} />
         <Route path="/combined" element={<Combined />} />
         <Route path="/ar" element={<Ar/>} />
+        <Route path="/main" element={<MainBuilding/>}/>
+        <Route path="/rts" element={<RTS/>}/>
+        <Route path="/science-building" element={<ScienceBuilding/>}/>
+        <Route path="/options" element={<Options/>}/>
+        <Route path="/navigate" element={<Navigate/>}/>
       </Routes>
     </>
   );

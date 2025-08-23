@@ -1,13 +1,13 @@
 const express = require('express');
 const helmet = require('helmet');
-const contentSecurityPolicy = require('helmet-csp');
-
 const app = express();
-app.use(helmet());
+//const contentSecurityPolicy = require('helmet-csp');
 
-app.get('/hello', (req, res) => {
-  res.status(200).json({mssg: 'hello'});
-});
+const router = require('./routes');
+
+app.use('/api', router);
+
+app.use(helmet());
 
 const port = 5000;
 

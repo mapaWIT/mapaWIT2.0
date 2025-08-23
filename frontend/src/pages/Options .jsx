@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import LaptopImage from "../assets/Laptop.png";
 import VectorSVG from "../assets/design1.svg"; // <-- Add this line
 
-export default function Landing() {
+export default function Options() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-r  from-[#6F35A6] to-[#CE94FA] ">
 
@@ -44,7 +44,7 @@ export default function Landing() {
           </p>
 
           <div className="pt-4">
-            <Link to="/options">
+            <Link to="/combined">
               <button className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all">
                 Start Navigation
               </button>
@@ -54,12 +54,24 @@ export default function Landing() {
 
         {/* Right Laptop Image */}
         <div className="md:w-1/2 flex justify-center md:justify-end -mt-[24rem] z-20 overflow-visible">
-        <img
-  src={LaptopImage}
-  alt="Laptop showing MapaWIT"
-  className="w-[900px] md:w-[1200px] transform scale-110 translate-x-[-20px] md:translate-x-[10px] drop-shadow-2xl"
-/>
-
+          <Link to='/navigate'>
+            <button
+              className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+            >2D
+            </button>
+          </Link>
+          <Link to='/combined'>
+            <button
+              className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+            >3D
+            </button>
+          </Link>
+          <Link to='/ar'>
+            <button
+              className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+            >AR
+            </button>
+          </Link>
         </div>
       </div>
     </div>

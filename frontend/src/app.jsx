@@ -6,6 +6,7 @@ import About from "./pages/About";
 import HowToUse from "./pages/HowToUse";
 import Combined from "./pages/Combined";
 import Loading from "./components/Loading";
+import Ar from "./pages/Ar"
 
 function Layout() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function Layout() {
         <Route path="/about" element={<About />} />
         <Route path="/how-to-use" element={<HowToUse />} />
         <Route path="/combined" element={<Combined />} />
+        <Route path="/ar" element={<Ar/>} />
       </Routes>
     </>
   );

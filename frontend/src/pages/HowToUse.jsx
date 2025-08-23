@@ -12,6 +12,7 @@ export default function HowToUse() {
         <AiFillHome />
       </Link>
       <div className="flex space-x-6 text-sm font-normal">
+        <Link to="/about" className="hover:text-[#D297FF] text-[#757575]">AR</Link>
         <Link to="/how-to-use" className="text-[#D297FF]">
           How to Use MapaWIT
         </Link>

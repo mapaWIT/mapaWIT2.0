@@ -12,6 +12,7 @@ export default function Navbar() {
 
       {/* Right Side - Navigation Links */}
       <div className="flex space-x-10 text-sm text-[#FBF6FF] ">
+        <Link to="/ar" className="hover:text-[#6F35A6] transition ">AR</Link>
         <Link to="/how-to-use" className="hover:text-[#6F35A6] transition ">
           How to Use MapaWIT
         </Link>

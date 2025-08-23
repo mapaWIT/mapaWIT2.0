@@ -42,6 +42,7 @@ export default function About() {
           <AiFillHome />
         </Link>
         <div className="flex space-x-6 text-sm font-normal">
+          <Link to="/ar" className="hover:text-[#D297FF] text-[#757575]">AR</Link>
           <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#757575]">How to Use MapaWIT</Link>
           <Link to="/about" className="hover:text-[#D297FF] text-[#757575]">About</Link>
         </div>

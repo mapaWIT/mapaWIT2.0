@@ -36,7 +36,7 @@ function Layout() {
   );
 }
 
-export default function App() {
+function LoadingScreen(){
   const [loading, setLoading] = useState(true);
 
   // Show loader only once when app loads
@@ -48,9 +48,22 @@ export default function App() {
   if (loading) {
     return <Loading />;
   }
+}
+
+export default function App() {
+  /*useEffect(() => {
+    const getMaps = async () => {
+      const res = await fetch("/api/mapa");
+      const maps = await res.json();
+
+      console.log(maps);
+    };
+    getMaps();
+  }, [])*/
 
   return (
     <Router>
+      <LoadingScreen />
       <Layout />
     </Router>
   );

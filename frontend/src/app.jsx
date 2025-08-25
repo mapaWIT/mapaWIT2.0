@@ -15,7 +15,7 @@ import Navigate from "./pages/Navigate";
 
 function Layout() {
   const location = useLocation();
-  const hideNavbarOn = [ "/how-to-use","/about"];
+  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/combined","/ar"];
 
   return (
     <>

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import LaptopImage from "../assets/Laptop.png";
-import VectorSVG from "../assets/design1.svg"; // <-- Add this line
+import VectorSVG from "../assets/design1.svg";
+
 
 export default function Options() {
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-r  from-[#6F35A6] to-[#CE94FA] ">
+
+    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] ">
 
       {/* Decorative Vector SVG - Top Right */}
       <img
@@ -29,11 +30,11 @@ export default function Options() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-10 md:pl-18 h-full -gap-60 pt-25">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-10 md:pl-15 h-full -gap-60 pt-25">
         
         {/* Left Text Content */}
         <div className="flex flex-col md:w-1/2 text-white text-center md:text-left space-y-2 -mt-100">
-          <h1 className="text-[3rem] md:text-[4rem] font-extrabold leading-tight">
+          <h1 className="text-[3rem] md:text-[7rem] font-extrabold leading-tight">
             mapa<span className="text-[#FBF6FF]">WIT</span>
           </h1>
           <p className="text-[#FBF6FF] text-lg md:text-xl font-medium">
@@ -42,33 +43,25 @@ export default function Options() {
           <p className="text-sm text-[#FBF6FF] max-w-md mx-auto md:mx-0">
             Lost on campus? MapaWIT helps you find classrooms, offices, and facilities quickly.
           </p>
-
-          <div className="pt-4">
-            <Link to="/combined">
-              <button className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all">
-                Start Navigation
-              </button>
-            </Link>
-          </div>
         </div>
 
         {/* Right Laptop Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end -mt-[24rem] z-20 overflow-visible">
+        <div className="md:w-1/2 flex justify-center md:justify-end -mt-[24rem] z-20 overflow-visible mr-10">
           <Link to='/navigate'>
             <button
-              className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+              className="px-15 py-4 mr-6 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
             >2D
             </button>
           </Link>
           <Link to='/combined'>
             <button
-              className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+              className="px-15 py-4 mr-5 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
             >3D
             </button>
           </Link>
           <Link to='/ar'>
             <button
-              className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+              className="px-15 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
             >AR
             </button>
           </Link>

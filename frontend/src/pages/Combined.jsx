@@ -1,8 +1,24 @@
 import { Link } from "react-router-dom";
 import VectorSVG from "../assets/design1.svg";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 export default function Combined() {
   return (
+    <div className="bg-[#FBF6FF] min-h-screen flex flex-col">
+    {/* Navbar */}
+    <nav className="w-full bg-gradient-to-r from-[#6F35A6] to-[#CE94FA]  py-4 px-8 flex justify-between items-center">
+      <Link to="/options" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
+        <AiOutlineArrowLeft/>
+      </Link>
+      <div className="flex space-x-5 text-sm font-normal">
+        <Link to="/ar" className="hover:text-[#D297FF] text-[#FBF6FF]">AR</Link>
+        <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">
+          How to Use MapaWIT
+        </Link>
+        <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
+      </div>
+    </nav>
+
     <div className="relative w-full min-h-screen overflow-hidden bg-gradient-to-r from-[#6F35A6] to-[#CE94FA]">
       
       {/* Decorative Vector SVG - Bottom */}
@@ -28,7 +44,7 @@ export default function Combined() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 -mt-30">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 -mt-25">
         <h1 className="text-white text-3xl md:text-5xl font-extrabold mb-4">
           Navigate WIT with Ease!
         </h1>
@@ -62,6 +78,7 @@ export default function Combined() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

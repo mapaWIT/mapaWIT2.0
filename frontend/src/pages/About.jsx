@@ -3,11 +3,15 @@ import { AiFillHome } from "react-icons/ai";
 import { FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 import Dheany from "../assets/Dheany.jpg";
-import Audrey from "../assets/Audrey.jpg";
-import Krisha from "../assets/Krisha.jpg";
-import James from "../assets/James.jpg";
-import Justine from "../assets/Justine.jpg";
+import Audrey from "../assets/Aud.jpg";
+import Krisha from "../assets/Krisha.png";
+import Charles from "../assets/Charles.png";
+import Justine from "../assets/Justine.png";
 import Ruzlyn from "../assets/Ruzlyn.jpg";
+import Karl from "../assets/Karl.jpg";
+import Enzi from "../assets/Enzi.jpg";
+import Joshua from "../assets/Joshua.webp";
+import Grey from "../assets/Grey.jpg";
 
 import Design1 from "../assets/design3.svg";
 import Design2 from "../assets/design4.svg";
@@ -15,18 +19,18 @@ import Design3 from "../assets/design5.svg";
 
 export default function About() {
   const teamMembers = [
-    { name: "Dheany Lyn Jereza", role: "Project Manager", image: Dheany },
-    { name: "Audrey Camaya", role: "UI/UX Designer\nResearcher", image: Audrey },
-    { name: "Krisha Geacaniga", role: "UI/UX Designer\nResearcher", image: Krisha },
-    { name: "Charles Vincent Jablo", role: "Backend Developer", image: James },
-    { name: "Justine Mariano", role: "Backend Developer", image: Justine },
-    { name: "Ruzlyn Kaw", role: "Frontend Developer", image: Ruzlyn },
-    { name: "Karl Jaspher Bolohabo", role: "Leader\nFull Stack Developer", image: Audrey },
-    { name: "Joshua Porras", role: "Full Stack Developer", image: James },
-    { name: "Gery Espina", role: "Full Stack Developer", image: Ruzlyn },
-    { name: "Adrian Acculador", role: "UI/UX\nFront-end Developer", image: Krisha },
-    { name: "Jan Grey Fuertes", role: "Back-end Developer", image: James },
-    { name: "Enzi Torento", role: "UI/UX\nFront-end Developer", image: Dheany },
+    { name: "Audrey Margarette Camaya", role: "Project Manager\nUI/UX Designer", image: Audrey},
+    { name: "Karl Jasper Bolohabo", role: "Team Leader", image: Karl },
+    { name: "Joshua Porras", role: "Full Stack Developer", image: Joshua },
+    { name: "Geriejeyd Espina", role: "Full stack Developer", image: Karl },
+    { name: "Ruzlyn Kaw", role: "Frontend Developer", image: Ruzlyn},
+    { name: "Charles Vincent Jablo", role: "Backend Developer", image: Charles },
+    { name: "Krisha Geacaniga", role: "UI/UX Designer\nFrontend Developer", image: Krisha },
+    { name: "Adrian Acullador", role: "UI/UX Designer\nFrontend Developer", image: Karl },
+    { name: "Enzi Luke Torrento", role: "UI/UX Designer\nFrontend Developer", image: Enzi },
+    { name: "Justine Ann Mariano", role: "UI/UX Designer\nReasearcher", image: Justine},
+    { name: "Dheany Lyn Claire Jereza", role: "Researcher", image: Dheany },
+    { name: "Jan Grey Fuertes", role: "Researcher", image: Grey },
   ];
 
   return (
@@ -38,19 +42,18 @@ export default function About() {
 
       {/* Navbar */}
       <nav className="w-full py-4 px-8 flex justify-between items-center z-10">
-        <Link to="/" className="hover:text-[#D297FF] text-[#8D21E1] text-3xl">
+        <Link to="/" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
           <AiFillHome />
         </Link>
         <div className="flex space-x-6 text-sm font-normal">
-          <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#757575]">How to Use MapaWIT</Link>
-          <Link to="/about" className="hover:text-[#D297FF] text-[#757575]">About</Link>
+          <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">How to Use MapaWIT</Link>
+          <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
         </div>
       </nav>
 
       {/* Title Section */}
       <div className="z-10 -mt-6 text-center">
-        <p className="text-[#5F4D6D] font-normal">Our Team</p>
-        <h1 className="text-4xl font-semibold text-[#1D1D1D] mt-2">Meet the Team</h1>
+        <h1 className="text-6xl font-semibold text-[#FBF6FF] mt-2">Meet the Team</h1>
       </div>
 
       {/* Team Grid - 2 Rows of 6 */}
@@ -60,7 +63,7 @@ export default function About() {
             {teamMembers.slice(startIdx, startIdx + 6).map((member, index) => (
               <div
                 key={index}
-                className="bg-[#F7EFFE] w-[200px] h-[220px] p-4 rounded-xl shadow-md flex flex-col items-center text-center cursor-pointer"
+                className="bg-[#F7EFFE] w-[200px] h-[220px] p-4 rounded-xl shadow-md flex flex-col items-center text-center border-2 border-purple-600 cursor-pointer"
                 style={{ transition: "transform 0.3s ease-in-out" }}
                 onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.15)")}
                 onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}

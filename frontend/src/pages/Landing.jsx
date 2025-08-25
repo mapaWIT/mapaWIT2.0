@@ -7,7 +7,7 @@ export default function Landing() {
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-r  from-[#6F35A6] to-[#CE94FA] ">
 
       {/* Decorative Vector SVG - Top Right */}
-      <img
+      <img 
         src={VectorSVG}
         alt="Decorative Vector"
         className="absolute bottom-5 left-0 w-full z-0 opacity100"
@@ -33,7 +33,7 @@ export default function Landing() {
         
         {/* Left Text Content */}
         <div className="flex flex-col md:w-1/2 text-white text-center md:text-left space-y-2 -mt-100">
-          <h1 className="text-[3rem] md:text-[4rem] font-extrabold leading-tight">
+          <h1 className="text-[3rem] md:text-[5rem] font-extrabold leading-tight">
             mapa<span className="text-[#FBF6FF]">WIT</span>
           </h1>
           <p className="text-[#FBF6FF] text-lg md:text-xl font-medium">
@@ -44,7 +44,7 @@ export default function Landing() {
           </p>
 
           <div className="pt-4">
-            <Link to="/combined">
+            <Link to="/options">
               <button className="px-15 py-3 bg-[#FBF6FF] text-[#783EAE] font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all">
                 Start Navigation
               </button>

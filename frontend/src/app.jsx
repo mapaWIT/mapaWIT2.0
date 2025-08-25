@@ -6,10 +6,16 @@ import About from "./pages/About";
 import HowToUse from "./pages/HowToUse";
 import Combined from "./pages/Combined";
 import Loading from "./components/Loading";
+import Ar from "./pages/Ar"
+import MainBuilding from "./pages/MainBuilding";
+import RTS from "./pages/RTS"
+import ScienceBuilding from "./pages/ScienceBuilding";
+import Options from "./pages/Options ";
+import Navigate from "./pages/Navigate";
 
 function Layout() {
   const location = useLocation();
-  const hideNavbarOn = [ "/how-to-use","/about"];
+  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/combined","/ar"];
 
   return (
     <>
@@ -19,12 +25,18 @@ function Layout() {
         <Route path="/about" element={<About />} />
         <Route path="/how-to-use" element={<HowToUse />} />
         <Route path="/combined" element={<Combined />} />
+        <Route path="/ar" element={<Ar/>} />
+        <Route path="/main" element={<MainBuilding/>}/>
+        <Route path="/rts" element={<RTS/>}/>
+        <Route path="/science-building" element={<ScienceBuilding/>}/>
+        <Route path="/options" element={<Options/>}/>
+        <Route path="/navigate" element={<Navigate/>}/>
       </Routes>
     </>
   );
 }
 
-export default function App() {
+function LoadingScreen(){
   const [loading, setLoading] = useState(true);
 
   // Show loader only once when app loads
@@ -36,9 +48,22 @@ export default function App() {
   if (loading) {
     return <Loading />;
   }
+}
+
+export default function App() {
+  /*useEffect(() => {
+    const getMaps = async () => {
+      const res = await fetch("/api/mapa");
+      const maps = await res.json();
+
+      console.log(maps);
+    };
+    getMaps();
+  }, [])*/
 
   return (
     <Router>
+      <LoadingScreen />
       <Layout />
     </Router>
   );

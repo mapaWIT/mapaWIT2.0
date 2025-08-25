@@ -11,8 +11,8 @@ export default function HowToUse() {
       <Link to="/" className="hover:text-[#D297FF] text-[#8D21E1] text-3xl">
         <AiFillHome />
       </Link>
-      <div className="flex space-x-6 text-sm font-normal">
-        <Link to="/how-to-use" className="text-[#D297FF]">
+      <div className="flex space-x-5 text-sm font-normal">
+        <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#757575]">
           How to Use MapaWIT
         </Link>
         <Link to="/about" className="hover:text-[#D297FF] text-[#757575]">About</Link>

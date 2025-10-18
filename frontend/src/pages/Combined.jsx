@@ -1,84 +1,110 @@
-import { Link } from "react-router-dom";
-import VectorSVG from "../assets/design1.svg";
-import { AiOutlineArrowLeft } from "react-icons/ai";
+import { useState } from "react";
 
 export default function Combined() {
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+  const [path, setPath] = useState([]);
+
+  // 🗺️ All routes inside the campus
+  const directions = {
+    "RTS Gate-CB Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+
+    "RTS Gate-RTS Gym": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk across the open field", img: "/field.jpg" },
+      { step: "Turn left towards the gym entrance", img: "/gym_entrance.jpg" },
+      { step: "You have arrived at RTS Gym", img: "/rts gym.jpg" },
+    ],
+
+    "CB Building-RTS Gym": [
+      { step: "Start at CB Building", img: "/cb building.jpg" },
+      { step: "Walk past the library", img: "/library.jpg" },
+      { step: "Turn left across the field", img: "/field.jpg" },
+      { step: "Arrive at RTS Gym", img: "/rts gym.jpg" },
+    ],
+  };
+
+  // 🔍 Handle Route Search
+  const handleSearch = () => {
+    const key = `${from}-${to}`;
+    const reverseKey = `${to}-${from}`;
+
+    if (directions[key]) {
+      setPath(directions[key]);
+    } else if (directions[reverseKey]) {
+      setPath([...directions[reverseKey]].reverse());
+    } else {
+      setPath([]);
+      alert("Sorry, route not found yet.");
+    }
+  };
+
   return (
-    <div className="bg-[#FBF6FF] min-h-screen flex flex-col">
-    {/* Navbar */}
-    <nav className="w-full bg-gradient-to-r from-[#6F35A6] to-[#CE94FA]  py-4 px-8 flex justify-between items-center">
-      <Link to="/options" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
-        <AiOutlineArrowLeft/>
-      </Link>
-      <div className="flex space-x-5 text-sm font-normal">
-        <Link to="/ar" className="hover:text-[#D297FF] text-[#FBF6FF]">AR</Link>
-        <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">
-          How to Use MapaWIT
-        </Link>
-        <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
-      </div>
-    </nav>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+      <h1 className="text-2xl font-bold mb-4">Campus Photo Navigation</h1>
 
-    <div className="relative w-full min-h-screen overflow-hidden bg-gradient-to-r from-[#6F35A6] to-[#CE94FA]">
-      
-      {/* Decorative Vector SVG - Bottom */}
-      <img
-        src={VectorSVG}
-        alt="Decorative Vector"
-        className="absolute bottom-5 left-0 w-full z-0 opacity-100"
-      />
-
-      {/* White Curvy Wave at Bottom */}
-      <div className="absolute bottom-0 right-0 w-full z-0 opacity-90">
-        <svg
-          viewBox="0 0 1440 320"
-          className="w-full h-auto"
-          preserveAspectRatio="none"
+      {/* Dropdown Selection Section */}
+      <div className="flex flex-col md:flex-row gap-3 mb-6 w-full max-w-md">
+        <select
+          value={from}
+          onChange={(e) => setFrom(e.target.value)}
+          className="border rounded p-2 flex-1"
         >
-          <path
-            fill="#ffffff"
-            fillOpacity="1"
-            d="M0,300 C100,500 1080,-400 1440,240 L1440,320 L0,320 Z"
-          />
-        </svg>
+          <option value="">From...</option>
+          <option value="RTS Gate">RTS Gate</option>
+          <option value="CB Building">CB Building</option>
+          <option value="RTS Gym">RTS Gym</option>
+        </select>
+
+        <select
+          value={to}
+          onChange={(e) => setTo(e.target.value)}
+          className="border rounded p-2 flex-1"
+        >
+          <option value="">To...</option>
+          <option value="RTS Gate">RTS Gate</option>
+          <option value="CB Building">CB Building</option>
+          <option value="RTS Gym">RTS Gym</option>
+        </select>
+
+        <button
+          onClick={handleSearch}
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Show Directions
+        </button>
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 -mt-25">
-        <h1 className="text-white text-3xl md:text-5xl font-extrabold mb-4">
-          Navigate WIT with Ease!
-        </h1>
-        <p className="text-[#EEDCFF] max-w-2xl text-base md:text-lg mb-8">
-          Lost on campus? MapaWIT helps you find classrooms, offices, and facilities quickly.
-        </p>
+      {/* Scrollable Directions Display */}
+      <div className="w-full max-w-lg">
+        {path.length > 0 ? (
+          <div className="space-y-6 max-h-[600px] overflow-y-auto p-2 bg-white rounded shadow-inner">
+            {path.map((step, index) => (
+              <div key={index} className="bg-white shadow rounded p-3">
+                <p className="font-semibold mb-2">{step.step}</p>
 
-        {/* Search + 3D Viewer Box */}
-        <div className="w-full max-w-7xl bg-white rounded-xl shadow-xl border-2 border-[#6F35A6] overflow-hidden -mt-5">
-          {/* Search Bar (now inside the box) */}
-          <div className="w-full flex items-center px-4 py-4 border-b border-gray-200">
-            <input
-              type="text"
-              placeholder="Search for a place.. (eg. Library, IT Lab, Registrar)"
-              className="flex-grow p-2 outline-none text-gray-800 border border-gray-300 rounded-md"
-            />
-            <button className="bg-[#6F35A6] hover:bg-[#8645b9] text-white font-semibold px-6 py-2 rounded-md ml-2 transition-all">
-              Search
-            </button>
+                {/* Scrollable image box */}
+                <div className="overflow-auto h-60 rounded border">
+                  <img
+                    src={step.img}
+                    alt={step.step}
+                    className="w-full object-cover"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* 3D Viewer */}
-          <div className="w-full h-[400px] ">
-            <iframe
-              title="Blender 3D Viewer"
-              src="https://your-3d-viewer-link.com"
-              frameBorder="0"
-              className="w-full h-full"
-              allowFullScreen
-            />
-          </div>
-        </div>
+        ) : (
+          <p className="text-gray-500 text-center">
+            Enter your starting and destination points to view directions.
+          </p>
+        )}
       </div>
-    </div>
     </div>
   );
 }

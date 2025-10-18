@@ -27,6 +27,27 @@ export default function Combined() {
       { step: "Turn left across the field", img: "/field.jpg" },
       { step: "Arrive at RTS Gym", img: "/rts gym.jpg" },
     ],
+
+    "RTS Gate-New Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+
+    "New Building-RTS Gym": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+
+    "New Building-CB Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
   };
 
   // 🔍 Handle Route Search
@@ -59,6 +80,12 @@ export default function Combined() {
           <option value="RTS Gate">RTS Gate</option>
           <option value="CB Building">CB Building</option>
           <option value="RTS Gym">RTS Gym</option>
+          <option value="New Building">New Building</option>
+          <option value="SGS (Small Grandstand)">SGS (Small Grandstand)</option>
+          <option value="BGS (Big Grandstand)">BGS (Big Grandstand)</option>
+          <option value="SHS Building">SHS Building</option>
+          <option value="RTS Canteen">RTS Canteen</option>
+          <option value="Engineering Dept.">Engineering Dept.</option>
         </select>
 
         <select
@@ -70,6 +97,12 @@ export default function Combined() {
           <option value="RTS Gate">RTS Gate</option>
           <option value="CB Building">CB Building</option>
           <option value="RTS Gym">RTS Gym</option>
+          <option value="New Building">New Building</option>
+          <option value="SGS (Small Grandstand)">SGS (Small Grandstand)</option>
+          <option value="BGS (Big Grandstand)">BGS (Big Grandstand)</option>
+          <option value="SHS Building">SHS Building</option>
+          <option value="RTS Canteen">RTS Canteen</option>
+          <option value="Engineering Dept.">Engineering Dept.</option>
         </select>
 
         <button

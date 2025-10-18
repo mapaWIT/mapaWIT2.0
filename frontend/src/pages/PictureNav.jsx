@@ -47,22 +47,22 @@ export default function Options() {
 
         {/* Right Laptop Image */}
         <div className="md:w-1/2 flex justify-center md:justify-end -mt-[24rem] z-20 overflow-visible mr-10">
-          <Link to='/navigate'>
+          <Link to='/rtspicturenav'>
             <button
               className="px-15 py-4 mr-6 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >2D
+            >RTS
             </button>
           </Link>
-          <Link to='/picturenav'>
+          <Link to='/mainpicturenav'>
             <button
               className="px-15 py-4 mr-5 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >3D
+            >Main
             </button>
           </Link>
-          <Link to='/ar'>
+          <Link to='/sbpicturenav'>
             <button
-              className="px-15 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >AR
+              className="px-15 py-4 mr-5 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+            >Science
             </button>
           </Link>
         </div>

@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import HowToUse from "./pages/HowToUse";
-import Combined from "./pages/Combined";
+import RTSPictureNav from "./pages/RTSPictureNav";
 import Loading from "./components/Loading";
 import Ar from "./pages/Ar"
 import MainBuilding from "./pages/MainBuilding";
@@ -12,6 +12,9 @@ import RTS from "./pages/RTS"
 import ScienceBuilding from "./pages/ScienceBuilding";
 import Options from "./pages/Options ";
 import Navigate from "./pages/Navigate";
+import PictureNav from "./pages/PictureNav"
+import MainPictureNav from "./pages/MainPictureNav"
+import SBPictureNav from "./pages/SBPictureNav"
 
 function Layout() {
   const location = useLocation();
@@ -24,13 +27,16 @@ function Layout() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/how-to-use" element={<HowToUse />} />
-        <Route path="/combined" element={<Combined />} />
+        <Route path="/rtspicturenav" element={<RTSPictureNav />} />
         <Route path="/ar" element={<Ar/>} />
         <Route path="/main" element={<MainBuilding/>}/>
         <Route path="/rts" element={<RTS/>}/>
         <Route path="/science-building" element={<ScienceBuilding/>}/>
         <Route path="/options" element={<Options/>}/>
         <Route path="/navigate" element={<Navigate/>}/>
+        <Route path="/picturenav" element={<PictureNav/>}/>
+        <Route path="/mainpicturenav" element={<MainPictureNav/>}/>
+        <Route path="/sbpicturenav" element={<SBPictureNav/>}/>
       </Routes>
     </>
   );

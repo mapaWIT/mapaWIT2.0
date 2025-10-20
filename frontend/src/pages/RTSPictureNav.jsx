@@ -13,36 +13,367 @@ export default function Combined() {
       { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
       { step: "You have arrived at CB Building", img: "/library.jpg" },
     ],
-
-    "RTS Gate-RTS Gym": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk across the open field", img: "/field.jpg" },
-      { step: "Turn left towards the gym entrance", img: "/gym_entrance.jpg" },
-      { step: "You have arrived at RTS Gym", img: "/rts gym.jpg" },
-    ],
-
-    "CB Building-RTS Gym": [
-      { step: "Start at CB Building", img: "/cb building.jpg" },
-      { step: "Walk past the library", img: "/library.jpg" },
-      { step: "Turn left across the field", img: "/field.jpg" },
-      { step: "Arrive at RTS Gym", img: "/rts gym.jpg" },
-    ],
-
     "RTS Gate-New Building": [
       { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
       { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
       { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
       { step: "You have arrived at CB Building", img: "/library.jpg" },
     ],
-
-    "New Building-RTS Gym": [
+    "RTS Gate-SGS (Small Grandstand)": [
       { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
       { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
       { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
       { step: "You have arrived at CB Building", img: "/library.jpg" },
     ],
-
-    "New Building-CB Building": [
+    "RTS Gate-BGS (Big Grandstand)": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-SHS Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-RTS Canteen": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-Engineering Dept.": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-EE/Electronics Lab Custodian's Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-Hydraulic Laboratory": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-ME Laboratories": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-MarE Smoke House": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-MESO Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-Audio Visual Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-Drafting Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-COE Extension Services Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-RTS Library": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "RTS Gate-Museo Betanico": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-New Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-SGS (Small Grandstand)": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-BGS (Big Grandstand)": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-SHS Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-RTS Canteen": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-Engineering Dept.": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-EE/Electronics Lab Custodian's Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-Hydraulic Laboratory": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-ME Laboratories": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-MarE Smoke House": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-MESO Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-Audio Visual Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-Drafting Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-COE Extension Services Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-RTS Library": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "CB Building-Museo Betanico": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-SGS (Small Grandstand)": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-BGS (Big Grandstand)": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-SHS Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-RTS Canteen": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-Engineering Dept.": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-EE/Electronics Lab Custodian's Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-Hydraulic Laboratory": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-ME Laboratories": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-MarE Smoke House": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-MESO Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-Audio Visual Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-Drafting Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-COE Extension Services Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-RTS Library": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "New Building-Museo Betanico": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-BGS (Big Grandstand)": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-SHS Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-RTS Canteen": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-Engineering Dept.": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-EE/Electronics Lab Custodian's Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-Hydraulic Laboratory": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-ME Laboratories": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-MarE Smoke House": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-MESO Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-Audio Visual Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-Drafting Room": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-COE Extension Services Office": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-RTS Library": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+    "SGS (Small Grandstand)-Museo Betanico": [
       { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
       { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
       { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
@@ -79,13 +410,22 @@ export default function Combined() {
           <option value="">From...</option>
           <option value="RTS Gate">RTS Gate</option>
           <option value="CB Building">CB Building</option>
-          <option value="RTS Gym">RTS Gym</option>
           <option value="New Building">New Building</option>
           <option value="SGS (Small Grandstand)">SGS (Small Grandstand)</option>
           <option value="BGS (Big Grandstand)">BGS (Big Grandstand)</option>
           <option value="SHS Building">SHS Building</option>
           <option value="RTS Canteen">RTS Canteen</option>
           <option value="Engineering Dept.">Engineering Dept.</option>
+          <option value="EE/Electronics Lab Custodian's Office">EE/Electronics Lab Custodian's Office</option>
+          <option value="Hydraulic Laboratory">Hydraulic Laboratory</option>
+          <option value="ME Laboratories">ME Laboratories</option>
+          <option value="MarE Smoke House">MarE Smoke House</option>
+          <option value="MESO Office">MESO Office</option>
+          <option value="Audio Visual Room">Audio Visual Room</option>
+          <option value="Drafting Room">Drafting Room</option>
+          <option value="COE Extension Services Office">COE Extension Services Office</option>
+          <option value="RTS Library">RTS Library</option>
+          <option value="Museo Betanico">Museo Betanico</option>
         </select>
 
         <select
@@ -96,13 +436,22 @@ export default function Combined() {
           <option value="">To...</option>
           <option value="RTS Gate">RTS Gate</option>
           <option value="CB Building">CB Building</option>
-          <option value="RTS Gym">RTS Gym</option>
           <option value="New Building">New Building</option>
           <option value="SGS (Small Grandstand)">SGS (Small Grandstand)</option>
           <option value="BGS (Big Grandstand)">BGS (Big Grandstand)</option>
           <option value="SHS Building">SHS Building</option>
           <option value="RTS Canteen">RTS Canteen</option>
           <option value="Engineering Dept.">Engineering Dept.</option>
+          <option value="EE/Electronics Lab Custodian's Office">EE/Electronics Lab Custodian's Office</option>
+          <option value="Hydraulic Laboratory">Hydraulic Laboratory</option>
+          <option value="ME Laboratories">ME Laboratories</option>
+          <option value="MarE Smoke House">MarE Smoke House</option>
+          <option value="MESO Office">MESO Office</option>
+          <option value="Audio Visual Room">Audio Visual Room</option>
+          <option value="Drafting Room">Drafting Room</option>
+          <option value="COE Extension Services Office">COE Extension Services Office</option>
+          <option value="RTS Library">RTS Library</option>
+          <option value="Museo Betanico">Museo Betanico</option>
         </select>
 
         <button

@@ -11,7 +11,7 @@ import Ruzlyn from "../assets/Ruzlyn.jpg";
 import Karl from "../assets/Karl.jpg";
 import Enzi from "../assets/Enzi.jpg";
 import Joshua from "../assets/Joshua.webp";
-import Grey from "../assets/Grey.jpg";
+
 
 import Design1 from "../assets/design3.svg";
 import Design2 from "../assets/design4.svg";
@@ -19,18 +19,17 @@ import Design3 from "../assets/design5.svg";
 
 export default function About() {
   const teamMembers = [
+    { name: "Karl Jasper Bolohabo", role: "Team Leader\nBackend Developer", image: Karl },
     { name: "Audrey Margarette Camaya", role: "Project Manager\nUI/UX Designer", image: Audrey},
-    { name: "Karl Jasper Bolohabo", role: "Team Leader", image: Karl },
     { name: "Joshua Porras", role: "Full Stack Developer", image: Joshua },
-    { name: "Geriejeyd Espina", role: "Full stack Developer", image: Karl },
     { name: "Ruzlyn Kaw", role: "Frontend Developer", image: Ruzlyn},
     { name: "Charles Vincent Jablo", role: "Backend Developer", image: Charles },
-    { name: "Krisha Geacaniga", role: "UI/UX Designer\nFrontend Developer", image: Krisha },
+    { name: "Krisha Geacaniga", role: "UI/UX Designer", image: Krisha },
     { name: "Adrian Acullador", role: "UI/UX Designer\nFrontend Developer", image: Karl },
-    { name: "Enzi Luke Torrento", role: "UI/UX Designer\nFrontend Developer", image: Enzi },
+    { name: "Enzi Luke Torrento", role: "Frontend Developer", image: Enzi },
     { name: "Justine Ann Mariano", role: "UI/UX Designer\nReasearcher", image: Justine},
     { name: "Dheany Lyn Claire Jereza", role: "Researcher", image: Dheany },
-    { name: "Jan Grey Fuertes", role: "Researcher", image: Grey },
+   
   ];
 
   return (
@@ -58,9 +57,9 @@ export default function About() {
 
       {/* Team Grid - 2 Rows of 6 */}
       <div className="z-10 mt-10 flex flex-col items-center space-y-10">
-        {[0, 6].map((startIdx) => (
+        {[0, 5].map((startIdx) => (
           <div key={startIdx} className="flex justify-center gap-4 flex-wrap max-w-[1440px] px-4">
-            {teamMembers.slice(startIdx, startIdx + 6).map((member, index) => (
+            {teamMembers.slice(startIdx, startIdx + 5).map((member, index) => (
               <div
                 key={index}
                 className="bg-[#F7EFFE] w-[200px] h-[220px] p-4 rounded-xl shadow-md flex flex-col items-center text-center border-2 border-purple-600 cursor-pointer"

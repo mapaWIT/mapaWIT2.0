@@ -12,6 +12,7 @@ import RTS from "./pages/RTS"
 import ScienceBuilding from "./pages/ScienceBuilding";
 import Options from "./pages/Options ";
 import Navigate from "./pages/Navigate";
+import ThreeDMap from "./pages/ThreeDMap";
 
 function Layout() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function Layout() {
         <Route path="/science-building" element={<ScienceBuilding/>}/>
         <Route path="/options" element={<Options/>}/>
         <Route path="/navigate" element={<Navigate/>}/>
+        <Route path="/3dMap" element={<ThreeDMap/>}/>
       </Routes>
     </>
   );

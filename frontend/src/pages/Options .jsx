@@ -81,7 +81,7 @@ export default function Options() {
           </Link>
 
           {/* PHOTO NAVIGATION */}
-          <Link to="/combined">
+          <Link to="/picnav">
             <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-9 transition-transform transform hover:-translate-y-2 cursor-pointer">
               <div className="flex flex-col items-center text-center space-y-4">
                 <img src={Photo} alt="Photo Navigation Icon" className="w-14 h-14" />

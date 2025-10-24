@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import HowToUse from "./pages/HowToUse";
-import Combined from "./pages/Combined";
+import PictureNav from "./pages/PictureNav";
 import Loading from "./components/Loading";
 import Ar from "./pages/Ar"
 import MainBuilding from "./pages/MainBuilding";
@@ -25,7 +25,7 @@ function Layout() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/how-to-use" element={<HowToUse />} />
-        <Route path="/combined" element={<Combined />} />
+        <Route path="/picnav" element={<PictureNav />} />
         <Route path="/ar" element={<Ar/>} />
         <Route path="/main" element={<MainBuilding/>}/>
         <Route path="/rts" element={<RTS/>}/>

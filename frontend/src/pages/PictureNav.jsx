@@ -1,71 +1,109 @@
-import { Link } from "react-router-dom";
-import VectorSVG from "../assets/design1.svg";
+import { useState } from "react";
 
+export default function PictureNav() {
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+  const [path, setPath] = useState([]);
 
-export default function Options() {
+  // 🗺️ All routes inside the campus
+  const directions = {
+    "RTS Gate-CB Building": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
+      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
+      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    ],
+
+    "RTS Gate-RTS Gym": [
+      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
+      { step: "Walk across the open field", img: "/field.jpg" },
+      { step: "Turn left towards the gym entrance", img: "/gym_entrance.jpg" },
+      { step: "You have arrived at RTS Gym", img: "/rts gym.jpg" },
+    ],
+
+    "CB Building-RTS Gym": [
+      { step: "Start at CB Building", img: "/cb building.jpg" },
+      { step: "Walk past the library", img: "/library.jpg" },
+      { step: "Turn left across the field", img: "/field.jpg" },
+      { step: "Arrive at RTS Gym", img: "/rts gym.jpg" },
+    ],
+  };
+
+  // 🔍 Handle Route Search
+  const handleSearch = () => {
+    const key = `${from}-${to}`;
+    const reverseKey = `${to}-${from}`;
+
+    if (directions[key]) {
+      setPath(directions[key]);
+    } else if (directions[reverseKey]) {
+      setPath([...directions[reverseKey]].reverse());
+    } else {
+      setPath([]);
+      alert("Sorry, route not found yet.");
+    }
+  };
+
   return (
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+      <h1 className="text-2xl font-bold mb-4">Campus Photo Navigation</h1>
 
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] ">
-
-      {/* Decorative Vector SVG - Top Right */}
-      <img
-        src={VectorSVG}
-        alt="Decorative Vector"
-        className="absolute bottom-5 left-0 w-full z-0 opacity100"
-      />
-
-      {/* Decorative Bottom Wavy Background */}
-      <div className="absolute bottom-20 right-0 w-full z-0 opacity-80">
-        <svg
-          viewBox="0 0 1440 320"
-          className="w-full h-auto"
-          preserveAspectRatio="none"
+      {/* Dropdown Selection Section */}
+      <div className="flex flex-col md:flex-row gap-3 mb-6 w-full max-w-md">
+        <select
+          value={from}
+          onChange={(e) => setFrom(e.target.value)}
+          className="border rounded p-2 flex-1"
         >
-          <path
-    fill="#ffffff"
-    fillOpacity="1"
-    d="M0,300 C100,500 1080,-400 1440,240 L1440,320 L0,320 Z"
-  />
-        </svg>
+          <option value="">From...</option>
+          <option value="RTS Gate">RTS Gate</option>
+          <option value="CB Building">CB Building</option>
+          <option value="RTS Gym">RTS Gym</option>
+        </select>
+
+        <select
+          value={to}
+          onChange={(e) => setTo(e.target.value)}
+          className="border rounded p-2 flex-1"
+        >
+          <option value="">To...</option>
+          <option value="RTS Gate">RTS Gate</option>
+          <option value="CB Building">CB Building</option>
+          <option value="RTS Gym">RTS Gym</option>
+        </select>
+
+        <button
+          onClick={handleSearch}
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Show Directions
+        </button>
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-10 md:pl-15 h-full -gap-60 pt-25">
-        
-        {/* Left Text Content */}
-        <div className="flex flex-col md:w-1/2 text-white text-center md:text-left space-y-2 -mt-100">
-          <h1 className="text-[3rem] md:text-[7rem] font-extrabold leading-tight">
-            mapa<span className="text-[#FBF6FF]">WIT</span>
-          </h1>
-          <p className="text-[#FBF6FF] text-lg md:text-xl font-medium">
-            Navigate WIT campus with Ease!
-          </p>
-          <p className="text-sm text-[#FBF6FF] max-w-md mx-auto md:mx-0">
-            Lost on campus? MapaWIT helps you find classrooms, offices, and facilities quickly.
-          </p>
-        </div>
+      {/* Scrollable Directions Display */}
+      <div className="w-full max-w-lg">
+        {path.length > 0 ? (
+          <div className="space-y-6 max-h-[600px] overflow-y-auto p-2 bg-white rounded shadow-inner">
+            {path.map((step, index) => (
+              <div key={index} className="bg-white shadow rounded p-3">
+                <p className="font-semibold mb-2">{step.step}</p>
 
-        {/* Right Laptop Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end -mt-[24rem] z-20 overflow-visible mr-10">
-          <Link to='/rtspicturenav'>
-            <button
-              className="px-15 py-4 mr-6 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >RTS
-            </button>
-          </Link>
-          <Link to='/mainpicturenav'>
-            <button
-              className="px-15 py-4 mr-5 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >Main
-            </button>
-          </Link>
-          <Link to='/sbpicturenav'>
-            <button
-              className="px-15 py-4 mr-5 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >Science
-            </button>
-          </Link>
-        </div>
+                {/* Scrollable image box */}
+                <div className="overflow-auto h-60 rounded border">
+                  <img
+                    src={step.img}
+                    alt={step.step}
+                    className="w-full object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-gray-500 text-center">
+            Enter your starting and destination points to view directions.
+          </p>
+        )}
       </div>
     </div>
   );

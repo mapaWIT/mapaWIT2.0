@@ -92,12 +92,6 @@ export default function Options() {
               </div>
             </div>
           </Link>
-          <Link to='/picturenav'>
-            <button
-              className="px-15 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
-            >PictureNav
-            </button>
-          </Link>
         </div>
       </div>
     </div>

@@ -53,7 +53,7 @@ export default function ScienceBuilding() {
             Science building Campus Map
           </h2>
           <iframe
-            src="https://app.mappedin.com/map/67c26a2ff724c8000b05f0f5"
+            src="https://app.mappedin.com/map/67e36211fe2774000bb09f12?embedded=true"
             title="Mappedin Map"
             width="100%"
             height="430"

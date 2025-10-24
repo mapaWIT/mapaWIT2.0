@@ -212,35 +212,35 @@ export default function Navigate() {
         </div>
 
         {/* Header */}
-        <div className="relative z-10 flex flex-col items-center text-center pt-10 -pb-4">
+        <div className="relative z-10 flex flex-col items-center text-center pt-8 -pb-4">
           <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-md">
-            Navigate WIT Campus with Ease!
+            Real-Time Navigation
           </h1>
           <p className="mt-2 text-lg text-white/90">
             Track campus by campus here
           </p>
 
           {/* Controls */}
-          <div className="flex space-x-3 mt-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg">
+          <div className="flex space-x-3 mt-2 backdrop-blur-md px-8 py-2 rounded-xl shadow-lg">
             <select
               value={start}
               onChange={(e) => setStart(e.target.value)}
-              className="px-3 py-1 rounded text-black font-semibold"
+              className="px-3 py-1 rounded text-black font-semibold bg-white border-3 border-[#8D21E1]"
             >
-              <option value="current">📍 Me (My Location)</option>
-              <option value="main">🏫 Main Campus</option>
-              <option value="rts">🏢 RTS Campus</option>
-              <option value="science">🔬 Science Building</option>
+              <option value="current"> My Location</option>
+              <option value="main"> Main Campus</option>
+              <option value="rts"> RTS Campus</option>
+              <option value="science"> Science Building</option>
             </select>
 
             <select
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
-              className="px-3 py-1 rounded text-black font-semibold"
+              className="px-3 py-1 rounded text-black font-semibold bg-white border-3 border-[#8D21E1]"
             >
-              <option value="main">🏫 Main Campus</option>
-              <option value="rts">🏢 RTS Campus</option>
-              <option value="science">🔬 Science Building</option>
+              <option value="main"> Main Campus</option>
+              <option value="rts"> RTS Campus</option>
+              <option value="science"> Science Building</option>
             </select>
           </div>
         </div>
@@ -274,7 +274,7 @@ export default function Navigate() {
                       className="mt-2 bg-purple-600 hover:bg-purple-700 px-3 py-1 text-xs text-white rounded-lg transition"
                       onClick={() => setDestination(key)}
                     >
-                      🚶 Go here
+                       Go here
                     </button>
                   </div>
                 </Popup>

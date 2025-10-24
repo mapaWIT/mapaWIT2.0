@@ -21,7 +21,6 @@ export default function Navigate() {
                  <AiOutlineArrowLeft/>
                </Link>
                <div className="flex space-x-5 text-sm font-normal">
-                 <Link to="/ar" className="hover:text-[#D297FF] text-[#FBF6FF]">AR</Link>
                  <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">
                    How to Use MapaWIT
                  </Link>
@@ -53,9 +52,9 @@ export default function Navigate() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full flex flex-col items-center mt-5 justify-start pt-16 px-6 pb-32 text-center">
+      <div className="relative z-10 w-full flex flex-col items-center mt-15 justify-start pt-16 px-6 pb-32 text-center">
         <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-md">
-          Navigate WIT campus with Ease!
+          2D MAP NAVIGATION!
         </h1>
         <p className="mt-4 text-lg md:text-xl text-white/90 max-w-2xl drop-shadow-sm">
           Lost on campus? MapaWIT helps you find classrooms, offices, and facilities quickly.

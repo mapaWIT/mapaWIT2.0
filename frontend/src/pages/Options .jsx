@@ -53,7 +53,7 @@ export default function Options() {
             >2D
             </button>
           </Link>
-          <Link to='/combined'>
+          <Link>
             <button
               className="px-15 py-4 mr-5 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
             >3D
@@ -63,6 +63,12 @@ export default function Options() {
             <button
               className="px-15 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
             >AR
+            </button>
+          </Link>
+          <Link to='/picturenav'>
+            <button
+              className="px-15 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all"
+            >PictureNav
             </button>
           </Link>
         </div>

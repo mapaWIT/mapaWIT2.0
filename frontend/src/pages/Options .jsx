@@ -55,7 +55,7 @@ export default function Options() {
           </Link>
 
           {/* 3D MAP */}
-          <Link to="/3D">
+          <Link to="/sb3d">
             <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-9 transition-transform transform hover:-translate-y-2 cursor-pointer">
               <div className="flex flex-col items-center text-center space-y-4">
                 <img src={Map3D} alt="3D Map Icon" className="w-14 h-14" />

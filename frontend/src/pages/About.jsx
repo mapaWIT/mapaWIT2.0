@@ -2,15 +2,16 @@ import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa";
 
-import Dheany from "../assets/Dheany.jpg";
-import Audrey from "../assets/Aud.jpg";
-import Krisha from "../assets/Krisha.png";
-import Charles from "../assets/Charles.png";
-import Justine from "../assets/Justine.png";
-import Ruzlyn from "../assets/Ruzlyn.jpg";
-import Karl from "../assets/Karl.jpg";
-import Enzi from "../assets/Enzi.jpg";
-import Joshua from "../assets/Joshua.webp";
+import Dheany from "../assets/Dheany.jpeg";
+import Audrey from "../assets/Audrey.png";
+import Krisha from "../assets/Krisha.jpeg";
+import Charles from "../assets/Charles.jpeg";
+import Justine from "../assets/Justine.jpeg";
+import Ruzlyn from "../assets/Ruzlyn.png";
+import Karl from "../assets/Karl.jpeg";
+import Enzi from "../assets/Enzi.jpeg";
+import Joshua from "../assets/Joshua.png";
+import Adrian from "../assets/Adrian.png";
 
 
 import Design1 from "../assets/design3.svg";
@@ -25,9 +26,9 @@ export default function About() {
     { name: "Ruzlyn Kaw", role: "Frontend Developer", image: Ruzlyn},
     { name: "Charles Vincent Jablo", role: "Backend Developer", image: Charles },
     { name: "Krisha Geacaniga", role: "UI/UX Designer", image: Krisha },
-    { name: "Adrian Acullador", role: "UI/UX Designer\nFrontend Developer", image: Karl },
+    { name: "Adrian Acullador", role: "UI/UX Designer", image: Adrian },
     { name: "Enzi Luke Torrento", role: "Frontend Developer", image: Enzi },
-    { name: "Justine Ann Mariano", role: "UI/UX Designer\nReasearcher", image: Justine},
+    { name: "Justine Ann Mariano", role: "Reasearcher", image: Justine},
     { name: "Dheany Lyn Claire Jereza", role: "Researcher", image: Dheany },
    
   ];

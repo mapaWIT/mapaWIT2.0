@@ -12,12 +12,12 @@ import RTS from "./pages/RTS"
 import ScienceBuilding from "./pages/ScienceBuilding";
 import Options from "./pages/Options ";
 import Navigate from "./pages/Navigate";
-import ThreeDMap from "./pages/ThreeDMap";
+import ScienceBuilding3d from "./pages/ScienceBuilding3d";
+
 
 function Layout() {
   const location = useLocation();
-  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/combined","/ar"];
-
+  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/combined","/ar","/sb3d"];
   return (
     <>
       {!hideNavbarOn.includes(location.pathname) && <Navbar />}
@@ -32,7 +32,7 @@ function Layout() {
         <Route path="/science-building" element={<ScienceBuilding/>}/>
         <Route path="/options" element={<Options/>}/>
         <Route path="/navigate" element={<Navigate/>}/>
-        <Route path="/3dMap" element={<ThreeDMap/>}/>
+        <Route path="/sb3d" element={<ScienceBuilding3d />} />
       </Routes>
     </>
   );

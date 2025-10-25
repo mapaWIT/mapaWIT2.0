@@ -13,6 +13,9 @@ import ScienceBuilding from "./pages/ScienceBuilding";
 import Options from "./pages/Options ";
 import Navigate from "./pages/Navigate";
 import ScienceBuilding3d from "./pages/ScienceBuilding3d";
+import MainPictureNav from "./pages/MainPictureNav";
+import RTSPictureNav from "./pages/RTSPictureNav";
+import SBPictureNav from "./pages/SBPictureNav";
 
 
 function Layout() {
@@ -33,6 +36,9 @@ function Layout() {
         <Route path="/options" element={<Options/>}/>
         <Route path="/navigate" element={<Navigate/>}/>
         <Route path="/sb3d" element={<ScienceBuilding3d />} />
+        <Route path="/mainpicturenav" element={<MainPictureNav />} />
+        <Route path="/rtspicturenav" element={<RTSPictureNav />} />
+        <Route path="/sbpicturenav" element={<SBPictureNav />} />
       </Routes>
     </>
   );

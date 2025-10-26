@@ -17,10 +17,9 @@ import MainPictureNav from "./pages/MainPictureNav";
 import RTSPictureNav from "./pages/RTSPictureNav";
 import SBPictureNav from "./pages/SBPictureNav";
 
-
 function Layout() {
   const location = useLocation();
-  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/combined","/ar","/sb3d"];
+  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/picnav","/ar","/sb3d"];
   return (
     <>
       {!hideNavbarOn.includes(location.pathname) && <Navbar />}
@@ -28,7 +27,6 @@ function Layout() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/how-to-use" element={<HowToUse />} />
-        <Route path="/picnav" element={<PictureNav />} />
         <Route path="/ar" element={<Ar/>} />
         <Route path="/main" element={<MainBuilding/>}/>
         <Route path="/rts" element={<RTS/>}/>
@@ -38,7 +36,8 @@ function Layout() {
         <Route path="/sb3d" element={<ScienceBuilding3d />} />
         <Route path="/mainpicturenav" element={<MainPictureNav />} />
         <Route path="/rtspicturenav" element={<RTSPictureNav />} />
-        <Route path="/sbpicturenav" element={<SBPictureNav />} />
+        <Route path="/sbpicturenav" element={<SBPictureNav/>} />
+        <Route path="/picnav" element={<PictureNav />} />
       </Routes>
     </>
   );

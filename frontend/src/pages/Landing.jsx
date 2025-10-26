@@ -57,7 +57,7 @@ export default function Landing() {
         <img
   src={LaptopImage}
   alt="Laptop showing MapaWIT"
-  className="w-[900px] md:w-[1200px] transform scale-110 translate-x-[-20px] md:translate-x-[10px] drop-shadow-2xl"
+  className="w-[900px] md:w-[1200px] transform scale-130 translate-x-[-20px] md:translate-x-[10px] drop-shadow-2xl"
 />
 
         </div>

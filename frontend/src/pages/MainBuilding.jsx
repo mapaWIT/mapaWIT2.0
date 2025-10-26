@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { IoArrowBack } from "react-icons/io5"; // Back arrow icon
-import VectorSVG from "../assets/design1.svg"; // Replace with correct path
+import { IoArrowBack } from "react-icons/io5"; 
+import VectorSVG from "../assets/design1.svg"; 
 
 export default function MainBuilding() {
   const navigate = useNavigate();

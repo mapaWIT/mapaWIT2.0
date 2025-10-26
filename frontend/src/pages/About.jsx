@@ -20,13 +20,13 @@ import Design3 from "../assets/design5.svg";
 
 export default function About() {
   const teamMembers = [
-    { name: "Karl Jasper Bolohabo", role: "Team Leader\nBackend Developer", image: Karl },
-    { name: "Audrey Margarette Camaya", role: "Project Manager\nUI/UX Designer", image: Audrey},
+    { name: "Karl Jasper Bolohabo", role: "Team Leader", image: Karl },
+    { name: "Audrey Margarette Camaya", role: "Project Manager\nUX Designer", image: Audrey},
     { name: "Joshua Porras", role: "Full Stack Developer", image: Joshua },
     { name: "Ruzlyn Kaw", role: "Frontend Developer", image: Ruzlyn},
-    { name: "Charles Vincent Jablo", role: "Backend Developer", image: Charles },
-    { name: "Krisha Geacaniga", role: "UI/UX Designer", image: Krisha },
-    { name: "Adrian Acullador", role: "UI/UX Designer", image: Adrian },
+    { name: "Charles Vincent Jablo", role: "3D Designer", image: Charles },
+    { name: "Krisha Geacaniga", role: "UX Designer\nUX Writer", image: Krisha },
+    { name: "Adrian Acullador", role: "3D Designer", image: Adrian },
     { name: "Enzi Luke Torrento", role: "Frontend Developer", image: Enzi },
     { name: "Justine Ann Mariano", role: "Reasearcher", image: Justine},
     { name: "Dheany Lyn Claire Jereza", role: "Researcher", image: Dheany },

@@ -17,7 +17,7 @@ import ScienceBuilding3d from "./pages/ScienceBuilding3d";
 
 function Layout() {
   const location = useLocation();
-  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/combined","/ar","/sb3d"];
+  const hideNavbarOn = [ "/how-to-use","/about","/navigate","/picnav","/ar","/sb3d"];
   return (
     <>
       {!hideNavbarOn.includes(location.pathname) && <Navbar />}

@@ -405,7 +405,6 @@ export default function Combined() {
           className="border rounded p-2 flex-1"
         >
           <option value="">To...</option>
-          <option value="RTS Gate">RTS Gate</option>
           <option value="RTS Canteen">RTS Canteen</option>
           <option value="Marine Building">Marine Building</option>
           <option value="Library">Library</option>

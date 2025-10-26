@@ -7,131 +7,70 @@ export default function Combined() {
 
   // 🗺️ All routes inside the campus
   const directions = {
-    "Main Gate-Dean of Student Affairs Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-SDMC": [
+      { step: "Locate the Main building. Main Building is located in front of St. Clements.", img: "/MainBuilding.jpg" },
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Upon entering the entrance in your left you will see the SDMC.", img: "/SDMC.jpg" },
     ],
-    "Main Gate-Electrical Utility Room": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-SG Office": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Turn to your right, pass behind the table of the guard.", img: "/SGHallway.jpg" },
+      { step: "Continue walking through the small hallway leading you to the SG Office.", img: "/SGOffice.jpg" },
     ],
-    "Main Gate-CSU Academic Council": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Guidance Center": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Turn right in a hallway leading you to Guidance center.", img: "/GHallway.jpg" },
+      { step: "The Guidance center is located in front of the Personnel Office/Student affair.", img: "/GuidanceCenter.jpg" },
     ],
-    "Main Gate-RM-104/Chem Lab": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Accounting Office (Window)": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Turn left leading you to the Accounting Office.", img: "/IMG_4647.jpg" },
     ],
-    "Main Gate-SHS Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Personnel Office": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Turn right in a hallway continue walking leading you to the Personnel office.", img: "/GHallway.jpg" },
+      { step: "In front of Guidance center there is a room, enter the room walk straight and you will find the personnel office. The student affairs office, cultural affairs office, and personal office is located inside that room.", img: "/PersonnelOffice.jpg" },
     ],
-    "Main Gate-President's Conference Room": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Comptroller Office": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight then turn left to another corridor.", img: "/MHallway2.jpg" },
+      { step: "Enter the Accountancy hallway. The first door in your left side is the comptroller office.", img: "/AccountancyHall.jpg" },
     ],
-    "Main Gate-Chairman's Office, WIT Inc.": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Registrar Office": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight then turn left to another corridor.", img: "/MHallway2.jpg" },
+      { step: "Enter the Accountancy hallway. After passing the comptroller walk straight until the last window.", img: "/AccountancyHall.jpg" },
     ],
-    "Main Gate-HM Dept Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Accounting Office": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight then turn left to another corridor.", img: "/MHallway2.jpg" },
+      { step: "Enter the Accountancy hallway. After passing the Comptroller Office, the Accounting Office is located right beside.", img: "/AccountancyHall.jpg" },
     ],
-    "Main Gate-Graduate School (219) RM-219": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Dental Clinic": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "The end of the hallway is the Head Medical/Dental Department.", img: "/Dental_Academic.jpg" },
     ],
-    "Main Gate-RM-220/Faculty Room": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Chairman of Academic Affair": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "The end of the hallway is the Head Medical/Dental Department.", img: "/Dental_Academic.jpg" },
+      { step: "Beside of the Medical/Dental Department is CSU, Academic council.", img: "/Dental_Academic.jpg" },
     ],
-    "Main Gate-HM Mini Hotel, Restaurant, Bar, and Kitchen": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Cultural Affair Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-CBA Faculty Room/RM-314": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Business and Accountancy Dean's Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Computer Room Laboratory/RM 310": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Accountancy Department Head's Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Terrace": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Main Library": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Library Supervisor's Office": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Graduate School Library": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
-    ],
-    "Main Gate-Speech Laboratory/RM-400B": [
-      { step: "Start at RTS Gate", img: "/rts-gate.jpg" },
-      { step: "Walk straight along main pathway", img: "/rts pool.jpg" },
-      { step: "Turn right at the Admin Office", img: "/new-building.jpg" },
-      { step: "You have arrived at CB Building", img: "/library.jpg" },
+    "Main Gate-Cashier": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "In front of clinic turn left, you will see a signage CASHIER.", img: "/MHallway4.jpg" },
+      { step: "The cashier is located in front of elevator.", img: "/Cashier.jpg" },
     ],
   };
 
@@ -163,27 +102,6 @@ export default function Combined() {
         >
           <option value="">From...</option>
           <option value="Main Gate">Main Gate</option>
-          <option value="Dean of Student Affairs Office">Dean of Student Affairs Office</option>
-          <option value="Electrical Utility Room">Electrical Utility Room</option>
-          <option value="CSU Academic Council">CSU Academic Council</option>
-          <option value="RM-104/Chem Lab">RM-104/Chem Lab</option>
-          <option value="SHS Office">SHS Office</option>
-          <option value="President's Conference Room">President's Conference Room</option>
-          <option value="Chairman's Office, WIT Inc.">Chairman's Office, WIT Inc.</option>
-          <option value="HM Dept Office">HM Dept Office</option>
-          <option value="Graduate School (219) RM-219">Graduate School (219) RM-219</option>
-          <option value="RM-220/Faculty Room">RM-220/Faculty Room</option>
-          <option value="HM Mini Hotel, Restaurant, Bar, and Kitchen">HM Mini Hotel, Restaurant, Bar, and Kitchen</option>
-          <option value="Cultural Affair Office">Cultural Affair Office</option>
-          <option value="CBA Faculty Room/RM-314">CBA Faculty Room/RM-314</option>
-          <option value="Business and Accountancy Dean's Office">Business and Accountancy Dean's Office</option>
-          <option value="Computer Room Laboratory/RM 310">Computer Room Laboratory/RM 310</option>
-          <option value="Accountancy Department Head's Office">Accountancy Department Head's Office</option>
-          <option value="Terrace">Terrace</option>
-          <option value="Main Library">Main Library</option>
-          <option value="Library Supervisor's Office">Library Supervisor's Office</option>
-          <option value="Graduate School Library">Graduate School Library</option>
-          <option value="Speech Laboratory/RM-400B">Speech Laboratory/RM-400B</option>
         </select>
 
         <select
@@ -191,29 +109,17 @@ export default function Combined() {
           onChange={(e) => setTo(e.target.value)}
           className="border rounded p-2 flex-1"
         >
-          <option value="">From...</option>
-          <option value="Main Gate">Main Gate</option>
-          <option value="Dean of Student Affairs Office">Dean of Student Affairs Office</option>
-          <option value="Electrical Utility Room">Electrical Utility Room</option>
-          <option value="CSU Academic Council">CSU Academic Council</option>
-          <option value="RM-104/Chem Lab">RM-104/Chem Lab</option>
-          <option value="SHS Office">SHS Office</option>
-          <option value="President's Conference Room">President's Conference Room</option>
-          <option value="Chairman's Office, WIT Inc.">Chairman's Office, WIT Inc.</option>
-          <option value="HM Dept Office">HM Dept Office</option>
-          <option value="Graduate School (219) RM-219">Graduate School (219) RM-219</option>
-          <option value="RM-220/Faculty Room">RM-220/Faculty Room</option>
-          <option value="HM Mini Hotel, Restaurant, Bar, and Kitchen">HM Mini Hotel, Restaurant, Bar, and Kitchen</option>
-          <option value="Cultural Affair Office">Cultural Affair Office</option>
-          <option value="CBA Faculty Room/RM-314">CBA Faculty Room/RM-314</option>
-          <option value="Business and Accountancy Dean's Office">Business and Accountancy Dean's Office</option>
-          <option value="Computer Room Laboratory/RM 310">Computer Room Laboratory/RM 310</option>
-          <option value="Accountancy Department Head's Office">Accountancy Department Head's Office</option>
-          <option value="Terrace">Terrace</option>
-          <option value="Main Library">Main Library</option>
-          <option value="Library Supervisor's Office">Library Supervisor's Office</option>
-          <option value="Graduate School Library">Graduate School Library</option>
-          <option value="Speech Laboratory/RM-400B">Speech Laboratory/RM-400B</option>
+          <option value="">To...</option>
+          <option value="SDMC">School Disaster Management Office</option>
+          <option value="SG Office">SG Office</option>
+          <option value="Guidance Center">Guidance Center</option>
+          <option value="Accounting Office (Window)">Accounting Office (Window)</option>
+          <option value="Personnel Office">Personnel Office</option>
+          <option value="Comptroller Office">Comptroller Office</option>
+          <option value="Registrar Office">Registrar Office</option>
+          <option value="Accounting Office">Accounting Office</option>
+          <option value="Dental Clinic">Medical/Dental Department</option>
+          <option value="Cashier">Cashier</option>
         </select>
 
         <button

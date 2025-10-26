@@ -11,10 +11,10 @@ export default function CampusPhotoNavigation() {
 
   // 🗺️ Directions with images and descriptions
   const directions = {
-     "RTS Gate-RTS Canteen": [
+    "RTS Gate-RTS Canteen": [
       { step: "Proceed straight ahead from the gate and enter the primary gate directly in front of you.", img: "/rts-gate.jpg" },
       { step: "Once inside the entrance, continue walking until you reach the pathway to canteen.", img: "/Entrance-Hallway.jpg" },
-      { step: "Walk straight along this pathway you will pass the RTS canteen.", img: "/Hallway2.jpg" },
+      { step: "Walk straight along this pathway you will pass the RTS canteen.", img: "/hallway2.jpg" },
       { step: "You have arrived! The canteen is now visible and it is in front of marine building.", img: "/canteen.jpg" },
     ],
     "RTS Gate-Marine Building": [

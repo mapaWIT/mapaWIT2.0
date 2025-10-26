@@ -72,6 +72,13 @@ export default function Combined() {
       { step: "In front of clinic turn left, you will see a signage CASHIER.", img: "/MHallway4.jpg" },
       { step: "The cashier is located in front of elevator.", img: "/Cashier.jpg" },
     ],
+    "Main Gate-Cashier": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "After passing the main entrance continue walking until in the intersection.", img: "/MHAllway1.1.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "In front of clinic turn left, you will see a signage CASHIER.", img: "/MHallway4.jpg" },
+      { step: "The cashier is located in front of elevator.", img: "/Cashier.jpg" },
+    ],
   };
 
   // 🔍 Handle Route Search

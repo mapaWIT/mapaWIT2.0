@@ -64,7 +64,7 @@ export default function PictureNav() {
           </Link>
           <Link to='/sbpicturenav'>
             <button className="px-10 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all">
-              Science
+              Science Building
             </button>
           </Link>
         </div>

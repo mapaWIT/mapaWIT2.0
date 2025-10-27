@@ -9,11 +9,29 @@ export default function SBPictureNav() {
   const [path, setPath] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 🗺️ All routes inside the campus
+  // 🗺️ Directions with images and descriptions
   const directions = {
+    "SB Entrance-SB Room 1,2,3": [
+      { step: "Walk straight ahead until the SB Entrance comes into view.", img: "/SB Entrance.jpg" },
+      { step: "Proceed walking straight until you reach room 1,2,3.", img: "/SB Room 1,2,3.jpg" },
+    ],
+    
+    "SB Entrance-SB Practicum": [
+      { step: "Walk straight ahead until the SB Entrance comes into view.", img: "/SB Entrance.jpg" },
+      { step: "Once you are in entrance, turn left.", img: "/SB Practicum.jpg" },
+    ],
+
+    "Sb Entrance = SB room 4,5,6,7": [
+      { step: "Proceed walking, then turn left until you reach room 4,5,6,7.", img: "/SB Entrance.jpg" },
+      { step: "Once you are in entrance, turn left.", img: "/SB Practicum.jpg" },
+    ]
+    
+    
+    
   };
 
-  // 🔍 Handle Route Search
+
+  // 🔍 Handle search
   const handleSearch = () => {
     const key = `${from}-${to}`;
     const reverseKey = `${to}-${from}`;
@@ -29,7 +47,8 @@ export default function SBPictureNav() {
     }
   };
 
-   const handlePrev = () => {
+  // ⬅️➡️ Navigation
+  const handlePrev = () => {
     if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
   const handleNext = () => {
@@ -38,66 +57,70 @@ export default function SBPictureNav() {
 
   return (
     <div className="relative min-h-screen">
-          {/* Background */}
-          <div className="fixed inset-0 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] overflow-hidden z-0 mt-11">
-            <img
-              src={VectorSVG}
-              alt="Decorative Vector"
-              className="absolute -bottom-19 left-0 w-full opacity-100"
+      {/* Background */}
+      <div className="fixed inset-0 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] overflow-hidden z-0 mt-11">
+        <img
+          src={VectorSVG}
+          alt="Decorative Vector"
+          className="absolute -bottom-19 left-0 w-full opacity-100"
+        />
+        <div className="absolute -bottom-4 right-0 w-full opacity-80">
+          <svg viewBox="0 0 1440 320" className="w-full h-auto" preserveAspectRatio="none">
+            <path
+              fill="#ffffff"
+              fillOpacity="1"
+              d="M0,300 C100,500 1080,-400 1440,240 L1440,320 L0,320 Z"
             />
-            <div className="absolute -bottom-4 right-0 w-full opacity-80">
-              <svg viewBox="0 0 1440 320" className="w-full h-auto" preserveAspectRatio="none">
-                <path
-                  fill="#ffffff"
-                  fillOpacity="1"
-                  d="M0,300 C100,500 1080,-400 1440,240 L1440,320 L0,320 Z"
-                />
-              </svg>
-            </div>
-          </div>
-    
-          {/* Navbar */}
-          <nav className="fixed top-0 left-0 w-full z-20 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] flex justify-between items-center px-10 py-2">
-            <Link to="/picnav" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
-              <AiOutlineArrowLeft />
-            </Link>
-            <div className="flex space-x-5 text-sm font-normal">
-              <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">How to Use MapaWIT</Link>
-              <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
-            </div>
-          </nav>
-    
-          {/* Main Content */}
-          <div className="relative z-10 flex -mt-30 flex-col items-center justify-start pt-24 pb-32 px-6 text-center min-h-screen overflow-y-auto">
-            <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-md mb-8">
-              Coming Soon
-            </h1>
-    
-            {/* Dropdowns */}
-            <div className="flex flex-wrap justify-center gap-3 mb-8 -mt-6">
-              {/* <select
-                value={from}
-                onChange={(e) => setFrom(e.target.value)}
-                className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800"
-              >
-                <option value="">From...</option>
-                <option value="RTS Gate">SB Gate</option>
-              </select>
-    
-              <select
-                value={to}
-                onChange={(e) => setTo(e.target.value)}
-                className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
-              >
-          <option value="">To...</option>
-        </select>
+          </svg>
+        </div>
+      </div>
 
-         <button
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full z-20 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] flex justify-between items-center px-10 py-2">
+        <Link to="/picnav" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
+          <AiOutlineArrowLeft />
+        </Link>
+        <div className="flex space-x-5 text-sm font-normal">
+          <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">How to Use MapaWIT</Link>
+          <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
+        </div>
+      </nav>
+
+      {/* Main Content */}
+      <div className="relative z-10 flex -mt-30 flex-col items-center justify-start pt-24 pb-32 px-6 text-center min-h-screen overflow-y-auto">
+        <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-md mb-8">
+          Campus Photo Navigation
+        </h1>
+
+        {/* Dropdowns */}
+        <div className="flex flex-wrap justify-center gap-3 mb-8 -mt-6">
+          <select
+            value={from}
+            onChange={(e) => setFrom(e.target.value)}
+            className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800"
+          >
+            <option value="">From...</option>
+            <option value="SB Entrance">SB Entrance</option>
+           
+          </select>
+
+          <select
+            value={to}
+            onChange={(e) => setTo(e.target.value)}
+            className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
+          >
+            <option value="">To...</option>
+            <option value="SB Room 1,2,3">SB Room 1,2,3</option>
+            <option value="SB Practicum">SB Practicum</option>
+            <option value="SB Practicum">SB </option>
+          </select>
+
+          <button
             onClick={handleSearch}
             className="bg-purple-700 text-white px-6 py-2 rounded shadow hover:bg-purple-800 transition"
           >
             Show Directions
-          </button>*/}
+          </button>
         </div>
 
         {/* Photo Card Navigation */}
@@ -141,7 +164,7 @@ export default function SBPictureNav() {
           </div>
         ) : (
           <p className="text-white text-lg mt-10">
-            SB Building Photo Navigation is coming soon.
+            Select your starting and destination points to view directions.
           </p>
         )}
       </div>

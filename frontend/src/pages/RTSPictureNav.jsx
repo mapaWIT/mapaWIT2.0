@@ -55,7 +55,7 @@ export default function CampusPhotoNavigation() {
     ],
     "RTS Gate-SHS Building": [
       { step: "Proceed straight ahead from the gate and enter the primary gate directly in front of you.", img: "/rts-gate.jpg" },
-      { step: "Walk straight along this pathway you will pass the RTS canteen", img: "/Hallway2jpg" },
+      { step: "Walk straight along this pathway you will pass the RTS canteen", img: "/Hallway2.jpg" },
       { step: " The marine building is directly across from the canteen which is in your right side.", img: "/MarineBuilding.jpg" },
       { step: "Once inside the Marine Building, walk straight down the main pathway. Turn right at the first intersection and continue straight; you will then pass the Clinic, WIT MESO, and Machine shop.", img: "/marinehallway.jpg" },
       { step: "Proceed through this pathway to reach your destination.", img: "/shsentrance.jpg" },
@@ -104,7 +104,7 @@ export default function CampusPhotoNavigation() {
     ],
     "RTS Gate-Conference Hall": [
       { step: "Proceed straight ahead from the gate and enter the primary gate directly in front of you.", img: "/rts-gate.jpg" },
-      { step: "Walk straight along this pathway you will pass the RTS canteen", img: "Hallway2.jpg" },
+      { step: "Walk straight along this pathway you will pass the RTS canteen", img: "/Hallway2.jpg" },
       { step: "Continue walking straight past the Canteen. Walk until this hallway ends.", img: "/Hallway3.jpg" },
       { step: "The new building is the modern structure directly in front of you.", img: "/newbuilding.jpg" },
       { step: "Upon entering the New Building, walk straight down the central NB Hallway and turn left to another hallway.", img: "/NBhallway.jpg" },

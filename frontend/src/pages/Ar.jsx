@@ -228,9 +228,7 @@ export default function Navigate() {
               className="px-3 py-1 rounded text-black font-semibold bg-white border-3 border-[#8D21E1]"
             >
               <option value="current"> My Location</option>
-              <option value="main"> Main Campus</option>
-              <option value="rts"> RTS Campus</option>
-              <option value="science"> Science Building</option>
+              
             </select>
 
             <select

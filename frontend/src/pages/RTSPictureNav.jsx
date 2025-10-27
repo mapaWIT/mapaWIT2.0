@@ -11,6 +11,34 @@ export default function CampusPhotoNavigation() {
 
   // 🗺️ Directions with images and descriptions
   const directions = {
+
+    "RTS Gate-MainEntrance": [
+      { step: "Start at the designated RTS Exit", img: "/rts-gate.jpg" },
+      { step: "Proceed straight onto the first road.", img: "/RTS road 1.jpg" },
+      { step: "As you walk, if you see a mini-store on your left, immediately turn right.", img: "/RTS road 2.jpg" },
+      { step: "Walk straight then left turn.", img: "/RTS road 3.jpg" },
+      { step: "Once you turn left, you will pass the CZ and Palawan landmarks. ", img: "/RTS road 4.jpg" },
+      { step: "Continue walking until you reach the highway, at which point you should see Hyun Gadgets.", img: "/RTS road 5.jpg" },
+      { step: "Walk straight until you reach St. Clements.", img: "/RTS road 6.jpg" },
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+        
+    ],
+
+    "RTS Gate-SB Entrance": [
+      { step: "Start at the designated RTS Exit", img: "/rts-gate.jpg" },
+      { step: "Proceed straight onto the first road.", img: "/RTS road 1.jpg" },
+      { step: "As you walk, if you see a mini-store on your left, immediately turn right.", img: "/RTS road 2.jpg" },
+      { step: "Walk straight then left turn.", img: "/RTS road 3.jpg" },
+      { step: "Once you turn left, you will pass the CZ and Palawan landmarks. ", img: "/RTS road 4.jpg" },
+      { step: "Continue walking until you reach the highway, at which point you should see Hyun Gadgets.", img: "/RTS road 5.jpg" },
+      { step: "Walk straight until you reach St. Clements.", img: "/RTS road 6.jpg" },
+      { step: "Pass the waiting shed in front of main building.", img: "/RTS road 7.jpg" },
+      { step: "Proceed straight, then make a left turn.", img: "/RTS road 8.jpg" },
+      { step: "Walk straight then turn right.", img: "/RTS road 9.jpg" },
+      { step: "Walk straight ahead until the SB Entrance comes into view.", img: "/SB Entrance.jpg" },
+        
+    ],
+
     "RTS Gate-RTS Canteen": [
       { step: "Proceed straight ahead from the gate and enter the primary gate directly in front of you.", img: "/rts-gate.jpg" },
       { step: "Once inside the entrance, continue walking until you reach the pathway to canteen.", img: "/Entrance-Hallway.jpg" },
@@ -452,7 +480,8 @@ export default function CampusPhotoNavigation() {
             className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
           >
             <option value="">To...</option>
-            <option value="RTS Gate">RTS Gate</option>
+             <option value="MainEntrance">Main Entrance</option>
+             <option value="SB Entrance">SB Entrance</option>
             <option value="RTS Canteen">RTS Canteen</option>
             <option value="Marine Building">Marine Building</option>
             <option value="Library">Library</option>

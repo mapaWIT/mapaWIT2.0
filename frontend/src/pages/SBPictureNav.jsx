@@ -21,13 +21,31 @@ export default function SBPictureNav() {
       { step: "Once you are in entrance, turn left.", img: "/SB Practicum.jpg" },
     ],
 
-    "Sb Entrance = SB room 4,5,6,7": [
+    "SB Entrance-SB room 4,5,6": [
       { step: "Proceed walking, then turn left until you reach room 4,5,6,7.", img: "/SB Entrance.jpg" },
-      { step: "Once you are in entrance, turn left.", img: "/SB Practicum.jpg" },
-    ]
+      { step: "Once you are in entrance, turn left.", img: "/SB room 4,5,6,.jpg" },
+    ],
     
     
+    "SB Entrance-RTS ENTRANCE": [
+      { step: "After you exit the SB Building, walk straight and make a left turn.", img: "/SB road 1.jpg" },
+      { step: "Proceed walking, make a right turn.", img: "/SB road 2.jpg" },
+      { step: "Walk straight until you reach the waiting shed.", img: "/SB road 3.jpg" },
+      { step: "Walk straight until you reach St. Clements.", img: "/SB road 4.jpg" },
+      { step: "Walk until you reach the you Hyun Gadgets.", img: "/SB road 5.jpg" },
+      { step: "Pass the CZ and palawan.", img: "/SB road 6.jpg" },
+      { step: "Walk straight then make a left turn.", img: "/SB road 7.jpg" },
+      { step: "Proceed walking then make a right turn.", img: "/SB road 8.jpg" },
+      { step: "Walk straight until rts gate.", img: "/SB road 9.jpg" },
+      { step: "10.	Proceed straight ahead from the gate and enter the primary gate directly in front of you.", img: "/RTS ENTRANCE.jpg" },
+    ],
     
+    "SB Entrance-Main Gate": [
+      { step: "After you exit the SB Building, walk straight and make a left turn.", img: "/SB road 1.jpg" },
+      { step: "Proceed walking, make a right turn.", img: "/SB road 2.jpg" },
+      { step: "Walk straight until you reach the waiting shed.", img: "/SB road 3.jpg" },
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/Main Gate.jpg" },
+    ],
   };
 
 
@@ -110,9 +128,11 @@ export default function SBPictureNav() {
             className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
           >
             <option value="">To...</option>
+            <option value="RTS ENTRANCE">RTS Entrance</option>
+            <option value="Main Gate">Main Entrance</option>
             <option value="SB Room 1,2,3">SB Room 1,2,3</option>
             <option value="SB Practicum">SB Practicum</option>
-            <option value="SB Practicum">SB </option>
+            <option value="SB room 4,5,6">SB Room 4,5,6,7 </option>
           </select>
 
           <button

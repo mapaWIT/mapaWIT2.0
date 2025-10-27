@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import VectorSVG from "../assets/design1.svg";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
-export default function Options() {
+export default function PictureNav() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] ">
 
@@ -38,7 +38,7 @@ export default function Options() {
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center gap-8 px-5 -mt-20">
 
         {/* Text Content */}
-        <div className="text-white space-y-4">
+        <div className="text-white space-y-2">
           <h1 className="text-[3rem] md:text-[5rem] font-extrabold leading-tight">
             Photo Navigation
           </h1>
@@ -53,7 +53,7 @@ export default function Options() {
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-8 mt-10" >
           <Link to='/rtspicturenav'>
-            <button className="px-10 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all">
+            <button className="px-14 py-4 bg-[#FBF6FF] text-[#783EAE] border-2 border-purple-600 font-semibold text-lg rounded-full shadow-md hover:bg-[#CE94FA] transition-all">
               RTS
             </button>
           </Link>

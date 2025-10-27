@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai"; // Home Icon
 import logo from "../assets/MapaWit.png";
-import VectorSVG from "../assets/design2.svg";
+import VectorSVG from "../assets/Design2.svg";
 
 export default function HowToUse() {
   return (

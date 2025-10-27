@@ -34,10 +34,10 @@ function Layout() {
         <Route path="/options" element={<Options/>}/>
         <Route path="/navigate" element={<Navigate/>}/>
         <Route path="/sb3d" element={<ScienceBuilding3d />} />
-         <Route path="/mainpicturenav" element={<MainPictureNav />} />
-          <Route path="/rtspicturenav" element={<RTSPictureNav />} />
-           <Route path="/sbpicturenav" element={<SBPictureNav/>} />
-            <Route path="/picnav" element={<PictureNav />} />
+        <Route path="/mainpicturenav" element={<MainPictureNav />} />
+        <Route path="/rtspicturenav" element={<RTSPictureNav />} />
+        <Route path="/sbpicturenav" element={<SBPictureNav/>} />
+        <Route path="/picnav" element={<PictureNav />} />
       </Routes>
     </>
   );

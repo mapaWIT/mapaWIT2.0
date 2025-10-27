@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Combined() {
+export default function SBPictureNav() {
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
   const [path, setPath] = useState([]);

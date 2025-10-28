@@ -159,84 +159,172 @@ export default function MainPictureNav() {
       { step: "Once you are on the Second Floor, walk straight. There is a pathway beneath the stairs that leads you directly to the President's Office.", img: "/Mhallway10.jpg" },
       { step: "The room located at the endpoint of the corridor is the President's Office.", img: "PresOffice.jpg" },
     ],
+    "Main Gate-HRM Workshop": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Pass the room 101, walk straight until the end point you will see a stair leading you to second floor.", img: "/MHallway8.jpg" },
+      { step: "Walk straight and you will see the HRM Workshop", img: "/MHallway8.jpg" },
+    ],
+    "Main Gate-College of Arts and Science/Dean's Office": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "Walk in the pathway beneath the elevator.", img: "/Mhallway4.jpg" },
+      { step: "Walk straight in a small pathway and take the stair leading you to second floor.", img: "/MHallway9.jpg" },
+      { step: "Once you are on the Second Floor, turn right to the hallway.", img: "/Mhallway10.jpg" },
+      { step: "Walk straight the long hallway until the end.", img: "/MHallway13.jpg" },
+      { step: "The last room beside witdio is College of arts and science head office/dean’s office.", img: "/casdean.jpg" },
+    ],
+    "Main Gate-Witdio": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "Walk in the pathway beneath the elevator.", img: "/Mhallway4.jpg" },
+      { step: "Walk straight in a small pathway and take the stair leading you to second floor.", img: "/MHallway9.jpg" },
+      { step: "Once you are on the Second Floor, turn right to the hallway.", img: "/Mhallway10.jpg" },
+      { step: "Walk straight the long hallway until the end.", img: "/MHallway13.jpg" },
+      { step: "The witdio is beside College of arts and science head office/dean’s office", img: "/Witdio.jpg" },
+    ],
+    "Main Gate-Computer Lab 1": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "The Electrical utility room is located beside the canteen.", img: "/EUR.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Take the stairs beside room 101 leading you to third floor.", img: "/MHallway8.jpg" },
+      { step: "The first room in your right side is the Computer Lab 1.", img: "/ComputerLab.jpg" },
+    ],
+    "Main Gate-Computer Lab 2": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "The Electrical utility room is located beside the canteen.", img: "/EUR.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Take the stairs beside room 101 leading you to third floor.", img: "/MHallway8.jpg" },
+      { step: "The first room in your right side is the Computer Lab 2.", img: "/complab2.jpg" },
+    ],
+    "Main Gate-Dean College of Business and Accountancy": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "The Electrical utility room is located beside the canteen.", img: "/EUR.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Take the stairs beside room 101 leading you to third floor.", img: "/MHallway8.jpg" },
+      { step: "The room in front of you is the College of Business and Accountancy.", img: "/CBA.jpg" },
+    ],
+    "Main Gate-Ladies Hall": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "The Electrical utility room is located beside the canteen.", img: "/EUR.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Take the stairs beside room 101 leading you to third floor.", img: "/MHallway8.jpg" },
+      { step: "After seeing the CBA Office, turn right into the hallway and follow it to the end. Once there, turn right again into the new corridor.", img: "/CBA.jpg" },
+      { step: "The last door in the corridor is the Ladies hall.", img: "/LadiesHall.jpg" },
+    ],
+    "Main Gate-Head of Accountancy": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "Walk in the pathway and take the elevator up until third floor.", img: "/Mhallway4.jpg" },
+      { step: "After you exit the elevator, the Head Accountancy Office will be immediately in your view.", img: "/HeadAccountancy.jpg" },
+    ],
+    "Main Gate-Graduate School Library": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Enter another corridor, walk straight until the end.", img: "/MHallway2.jpg" },
+      { step: "Walk in the pathway and take the elevator up until fourth floor.", img: "/Mhallway4.jpg" },
+      { step: "After you exit the elevator, the Graduate School Library will be immediately in your view.", img: "/GradLibrary.jpg" },
+    ],
+    "Main Gate-Main Library": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "The Electrical utility room is located beside the canteen.", img: "/EUR.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Take the stair up to 4th floor.", img: "/MHallway8.jpg" },
+      { step: "The Graduate School Library will be immediately in your view.", img: "/MainLibrary.jpg" },
+    ],
+    "Main Gate-Terrace": [
+      { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
+      { step: "Continue walking and pass through SDMC.", img: "/SDMC.jpg" },
+      { step: "The Electrical utility room is located beside the canteen.", img: "/EUR.jpg" },
+      { step: "Continue walking until you arrived at the hallway.", img: "/MHallway7.jpg" },
+      { step: "Take the stair up to 4th floor.", img: "/MHallway8.jpg" },
+      { step: "The rooftop will be immediately in your view.", img: "/IMG_4687.jpg" },
+    ],
   };
 
-  // 🔍 Handle Route Search
-  const handleSearch = () => {
-    const key = `${from}-${to}`;
-    const reverseKey = `${to}-${from}`;
-    if (directions[key]) {
-      setPath(directions[key]);
-      setCurrentIndex(0);
-    } else if (directions[reverseKey]) {
-      setPath([...directions[reverseKey]].reverse());
-      setCurrentIndex(0);
-    } else {
-      setPath([]);
-      alert("Sorry, route not found yet.");
-    }
-  };
-
-   const handlePrev = () => {
-    if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
-  };
-  const handleNext = () => {
-    if (currentIndex < path.length - 1) setCurrentIndex(currentIndex + 1);
-  };
-
-  return (
-    <div className="relative min-h-screen">
-          {/* Background */}
-          <div className="fixed inset-0 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] overflow-hidden z-0 mt-11">
-            <img
-              src={VectorSVG}
-              alt="Decorative Vector"
-              className="absolute -bottom-19 left-0 w-full opacity-100"
-            />
-            <div className="absolute -bottom-4 right-0 w-full opacity-80">
-              <svg viewBox="0 0 1440 320" className="w-full h-auto" preserveAspectRatio="none">
-                <path
-                  fill="#ffffff"
-                  fillOpacity="1"
-                  d="M0,300 C100,500 1080,-400 1440,240 L1440,320 L0,320 Z"
-                />
-              </svg>
-            </div>
+  // 🔍 Handle search
+    const handleSearch = () => {
+      const key = `${from}-${to}`;
+      const reverseKey = `${to}-${from}`;
+      if (directions[key]) {
+        setPath(directions[key]);
+        setCurrentIndex(0);
+      } else if (directions[reverseKey]) {
+        setPath([...directions[reverseKey]].reverse());
+        setCurrentIndex(0);
+      } else {
+        setPath([]);
+        alert("Sorry, route not found yet.");
+      }
+    };
+  
+    // ⬅️➡️ Navigation
+    const handlePrev = () => {
+      if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
+    };
+    const handleNext = () => {
+      if (currentIndex < path.length - 1) setCurrentIndex(currentIndex + 1);
+    };
+  
+    return (
+      <div className="relative min-h-screen">
+        {/* Background */}
+        <div className="fixed inset-0 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] overflow-hidden z-0 mt-11">
+          <img
+            src={VectorSVG}
+            alt="Decorative Vector"
+            className="absolute -bottom-19 left-0 w-full opacity-100"
+          />
+          <div className="absolute -bottom-4 right-0 w-full opacity-80">
+            <svg viewBox="0 0 1440 320" className="w-full h-auto" preserveAspectRatio="none">
+              <path
+                fill="#ffffff"
+                fillOpacity="1"
+                d="M0,300 C100,500 1080,-400 1440,240 L1440,320 L0,320 Z"
+              />
+            </svg>
           </div>
+        </div>
     
-          {/* Navbar */}
-          <nav className="fixed top-0 left-0 w-full z-20 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] flex justify-between items-center px-10 py-2">
-            <Link to="/picnav" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
-              <AiOutlineArrowLeft />
-            </Link>
-            <div className="flex space-x-5 text-sm font-normal">
-              <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">How to Use MapaWIT</Link>
-              <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
-            </div>
-          </nav>
-    
-          {/* Main Content */}
-          <div className="relative z-10 flex -mt-30 flex-col items-center justify-start pt-24 pb-32 px-6 text-center min-h-screen overflow-y-auto">
-            <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-md mb-8">
-              Campus Photo Navigation
-            </h1>
-    
-            {/* Dropdowns */}
-            <div className="flex flex-wrap justify-center gap-3 mb-8 -mt-6">
-              <select
-                value={from}
-                onChange={(e) => setFrom(e.target.value)}
-                className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800"
-              >
-                <option value="">From...</option>
-                <option value="RTS Gate">Main Gate</option>
-              </select>
-    
-              <select
-                value={to}
-                onChange={(e) => setTo(e.target.value)}
-                className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
-              >
+  {/* Navbar */}
+    <nav className="fixed top-0 left-0 w-full z-20 bg-gradient-to-r from-[#6F35A6] to-[#CE94FA] flex justify-between items-center px-10 py-2">
+      <Link to="/picnav" className="hover:text-[#8D21E1] text-[#D297FF] text-3xl">
+        <AiOutlineArrowLeft />
+      </Link>
+      <div className="flex space-x-5 text-sm font-normal">
+        <Link to="/how-to-use" className="hover:text-[#D297FF] text-[#FBF6FF]">How to Use MapaWIT</Link>
+        <Link to="/about" className="hover:text-[#D297FF] text-[#FBF6FF]">About</Link>
+      </div>
+    </nav>
+
+    {/* Main Content */}
+    <div className="relative z-10 flex -mt-30 flex-col items-center justify-start pt-24 pb-32 px-6 text-center min-h-screen overflow-y-auto">
+      <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-md mb-8">
+        Campus Photo Navigation
+      </h1>
+
+      {/* Dropdowns */}
+      <div className="flex flex-wrap justify-center gap-3 mb-8 -mt-6">
+        <select
+          value={from}
+          onChange={(e) => setFrom(e.target.value)}
+          className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800"
+        >
+          <option value="">From...</option>
+          <option value="Main Gate">Main Gate</option>
+          
+        </select>
+
+        <select
+          value={to}
+          onChange={(e) => setTo(e.target.value)}
+          className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
+        >
           <option value="">To...</option>
           <option value="SDMC">School Disaster Management Office</option>
           <option value="SG Office">SG Office</option>
@@ -258,6 +346,17 @@ export default function MainPictureNav() {
           <option value="Chemistry Lab">Chemistry Laboratory</option>
           <option value="CAS Laboratory">CAS Laboratory</option>
           <option value="President's Office">President's Office</option>
+          <option value="HRM Workshop">HRM Workshop</option>
+          <option value="College of Arts and Science/Dean's Office">College of Arts and Science/Dean's Office</option>
+          <option value="Witdio">Witdio</option>
+          <option value="Computer Lab 1">Computer Lab 1</option>
+          <option value="Computer Lab 2">Computer Lab 2</option>
+          <option value="Dean College of Business and Accountancy">Dean College of Business and Accountancy</option>
+          <option value="Ladies Hall">Ladies Hall</option>
+          <option value="Head of Accountancy">Head of Accountancy</option>
+          <option value="Graduate School Library">Graduate School Library</option>
+          <option value="Main Library">Main Library</option>
+          <option value="Terrace">Terrace</option>
         </select>
 
          <button
@@ -316,4 +415,3 @@ export default function MainPictureNav() {
     </div>
   );
 }
-

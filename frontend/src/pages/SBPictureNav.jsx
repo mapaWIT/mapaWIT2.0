@@ -191,4 +191,3 @@ export default function SBPictureNav() {
     </div>
   );
 }
-

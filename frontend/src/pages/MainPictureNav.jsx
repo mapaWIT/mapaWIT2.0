@@ -11,6 +11,26 @@ export default function MainPictureNav() {
 
   // 🗺️ All routes inside the campus
   const directions = {
+    "Main Gate-SB Entrance": [
+      { step: "Cross the pedestrian lane in front of ST. Clements.", img: "/Main road 1.jpg" },
+      { step: "Pass the waiting shed in front of main building.", img: "/RTS road 7.jpg" },
+      { step: "Proceed straight, then make a left turn.", img: "/RTS road 8.jpg" },
+      { step: "Walk straight then turn right.", img: "/RTS road 9.jpg" },
+      { step: "Walk straight ahead until the SB Entrance comes into view.", img: "/SB Entrance.jpg" },
+    ],
+
+    "Main Gate-RTS ENTRANCE":[
+      { step: "Cross the pedestrian lane in front of ST. Clements.", img: "/Main road 1.jpg" },
+      { step: "Walk straight until you reach the waiting shed.", img: "SB road 3.jpg" },
+      { step: "Walk straight until you reach St. Clements.", img: "/SB road 4.jpg" },
+      { step: "Walk until you reach the you Hyun Gadgets.", img: "SB road 5.jpg" },
+      { step: "Pass the CZ and palawan.", img: "/SB road 6.jpg" },
+      { step: "Walk straight then make a left turn.", img: "/SB road 7.jpg" },
+      { step: "Proceed walking then make a right turn.", img: "/SB road 8.jpg" },
+      { step: "Walk straight until rts gate.", img: "/SB road 9.jpg" },
+      { step: "Proceed straight ahead from the gate and enter the primary gate directly in front of you.", img: "/RTS ENTRANCE.jpg" },
+    ],
+
     "Main Gate-SDMC": [
       { step: "Locate the Main building. Main Building is located in front of St. Clements.", img: "/MainBuilding.jpg" },
       { step: "After you cross the pedestrian lane, walk straight ahead until the Main Entrance comes into view.", img: "/MainEntrance.jpg" },
@@ -326,6 +346,8 @@ export default function MainPictureNav() {
           className="px-4 py-2 rounded shadow bg-white border border-black text-gray-800 w-[160px] truncate"
         >
           <option value="">To...</option>
+           <option value="SB Entrance">SB Entrance</option>
+             <option value="RTS ENTRANCE">RTS Entrance</option>
           <option value="SDMC">School Disaster Management Office</option>
           <option value="SG Office">SG Office</option>
           <option value="Guidance Center">Guidance Center</option>
